@@ -49,14 +49,13 @@ hr{
 	font-size: 16px;
 	font-weight: 400;
 	margin: 20px 0;
-	text-align: justify;
 }
 .watch-live-btn{
 	font-size: 20px;
 	font-weight: 400;
 	padding: 10px 16px;
 	border-radius: 5px;
-	margin-top: 10px;
+	margin-top: 20px;
 	border: none;
 	background-color: #DD0000;
 	display: flex;
@@ -112,6 +111,12 @@ nav ul li a{
 	font-weight: 500;
 	text-decoration: none;
 	color: #000;
+}
+.active{
+	background-color: red;
+}
+.active a{
+	color: #fff;
 }
 
 /* blogs styles */
@@ -179,6 +184,8 @@ footer h2{
 }
 .footer-links{
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	margin: 2em 0;
 }
 .footer-links li{
@@ -190,4 +197,23 @@ footer h2{
 	text-decoration: none;
 	color: #B9B9B9;
 	letter-spacing: 1px;
+}
+.social-meadia-icons i{
+	font-size: 2.3em;
+	border: 3px solid #fff;
+	padding: .8rem;
+	border-radius: 50%;
+	margin: .5em;
+}
+.fa-facebook{
+	color: #4267B2;
+}
+.fa-twitter{
+	color: #1DA1F2;
+}
+.fa-instagram{
+	color: #d38217;
+}
+.fa-pinterest{
+	color: #E60023;
 }

@@ -357,6 +357,9 @@ footer h2{
 	.main-section, .blogs{
 		grid-template-columns: 1fr;
 	}
+	footer h2{
+		font-size: 1em;
+	}
 	.footer-links{
 		flex-direction: column;
 		text-align: center;

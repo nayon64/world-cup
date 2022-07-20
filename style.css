@@ -314,6 +314,9 @@ footer h2{
     media query 
 ------------------ */
 
+
+/* media query for mobile devies */
+
 @media only screen and (max-width:577px) {
 	.banner{
 		height: 100vh;
@@ -372,7 +375,7 @@ footer h2{
 	}
 }
  
-/* media query for 577px to 768px */
+/* media query for medium devies */
 
 @media only screen and (min-width:577px) and (max-width:768px){
 	.banner{
@@ -429,7 +432,7 @@ footer h2{
 	}
 }
 
-/* media query for 768px to 992px */
+/* media query for large devies */
 
 @media only screen and (min-width:768px) and (max-width:992px) {
 	.banner {

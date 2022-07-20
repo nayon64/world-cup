@@ -358,7 +358,7 @@ footer h2{
 		grid-template-columns: 1fr;
 	}
 	footer h2{
-		font-size: 1em;
+		font-size: 1.4em;
 	}
 	.footer-links{
 		flex-direction: column;

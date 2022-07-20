@@ -131,7 +131,11 @@ nav ul li a{
 }
 
 /* blogs styles */
-
+.main-section> div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 .blogs{
 	padding:0 20px 20px;
 	display: grid;
@@ -182,7 +186,20 @@ nav ul li a{
 .blog-duration{
 	margin-right: 2em;
 }
-
+.view-all-btn{
+	display: none;
+	margin-top: 20px;
+	border: none;
+	background-color: #DD0000;
+	padding: 12px 28px;
+	border-radius: 5px;
+}
+.view-all-btn a{
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 500;
+	color: #fff;
+}
 
 /* ----------------------------
     footer section styles
@@ -244,7 +261,10 @@ footer h2{
 
 .match-sheduels{
 	padding: 30px 20px;
-	max-height: 200px;
+	max-height: 220px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .teams-flag{
 	display: flex;
@@ -365,7 +385,6 @@ footer h2{
 		font-size: 14px;
 		height: 48px;
 		overflow: hidden;
-
 	}
 	.banner-img{
 		width: 60%;
@@ -374,14 +393,12 @@ footer h2{
 		grid-template-columns: 1fr;
 	    justify-content: center;
 	}
-	
 	.main-section nav {
 		background-color: transparent;
 		height: auto;
 		padding: 0;
 		margin-bottom: 20px;
 	}
-	
 	.main-section nav ul {
 		display: flex;
 		justify-content: center;
@@ -396,7 +413,11 @@ footer h2{
 		font-size: 14px;
 	}
 	.blogs {
+		width: 100%;
 		grid-template-columns: repeat(2, 1fr);
+	}
+	.view-all-btn{
+		display: block;
 	}
 	.social-media-icons {
 		display: grid;
@@ -443,6 +464,10 @@ footer h2{
 		border: 1px solid gray;
 	}
 	.blogs{
+		width: 100%;
 		grid-template-columns: repeat(2,1fr);
-	}	
+	}
+	.view-all-btn {
+		display: block;
+	}
 }

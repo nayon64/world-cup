@@ -144,7 +144,7 @@ nav ul li a{
 	gap: 20px;
 }
 .blog{
-	box-shadow: 2px 2px 25px gray;
+	box-shadow: 2px 2px 5px gray;
 	border-radius: 10px;
 	overflow: hidden;
 }

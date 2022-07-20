@@ -30,6 +30,7 @@ hr{
 	border-radius: 30px;
 	display:flex;
 	align-items: center;
+	margin-top: 7.5vh;
 	margin-bottom: 7.5vh;
 }
 .banner-text{

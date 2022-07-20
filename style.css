@@ -25,12 +25,11 @@ hr{
      banner section styles
 ------------------------------- */
 .banner{
-	height: 85vh;
+	height: 550px;
 	background-color: #161616;
 	border-radius: 30px;
 	display:flex;
 	align-items: center;
-	margin-top: 7.5vh;
 	margin-bottom: 7.5vh;
 }
 .banner-text{
@@ -75,7 +74,7 @@ hr{
 .banner-img img{
 	position: absolute;
 	bottom: 0;
-	width:80%;
+	width: 80%;
 }
 
 /* ----------------------------
@@ -125,7 +124,7 @@ nav ul li a{
 /* blogs styles */
 
 .blogs{
-	margin-left: 20px;
+	padding:0 20px 20px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 20px;
@@ -135,9 +134,13 @@ nav ul li a{
 	border-radius: 10px;
 	overflow: hidden;
 }
+.blog-thumbail{
+	width: 100%;
+}
 .blog-thumbail img{
 	width: 100%;
 }
+
 .blog-detail{
 	padding: 15px;
 	background-color: rgb(251, 248, 248);
@@ -170,6 +173,7 @@ nav ul li a{
 .blog-duration{
 	margin-right: 2em;
 }
+
 
 /* ----------------------------
     footer section styles
@@ -225,6 +229,56 @@ footer h2{
 	color: #E60023;
 }
 
+/* ------------------------------------
+  upcoming match pages blogs styles  
+  -----------------------------------*/
+
+.match-sheduels{
+	padding: 30px 20px;
+	max-height: 200px;
+}
+.teams-flag{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+}
+.flag {
+	max-width: 80px;
+	max-height: 56px;
+}
+
+/* ------------------------------------
+  all group pages point table styles  
+  -----------------------------------*/
+.team-point table{
+	align-items: center;
+	width: 100%;
+	padding: 0 20px 20px;
+
+}
+.team-point .blog-title{
+	display: flex;
+	justify-content: space-around;
+}
+.team-point table th, td{
+	padding: 10px 12px;
+}
+
+/* point table country color styles */
+
+.color-navyblue{
+	color: #001559;
+}
+.color-skyblue{
+	color: #5CA6F7;
+}
+.color-green{
+	color: #0F8034;
+}
+.color-red{
+	color: #E71D25;
+}
 
 /* ----------------
     media query 
@@ -260,8 +314,6 @@ footer h2{
 	.banner-img img{
 		height: 100%;
 	}
-	
-
 	nav{
 		height: auto;
 		margin-bottom: 20px;
@@ -269,16 +321,12 @@ footer h2{
 		display: flex;
 		justify-content: center;
 	}
-	
 	nav ul li{
 		margin: 20px 0;
 		border: 1px solid gray;
 	}
 	.main-section, .blogs{
 		grid-template-columns: 1fr;
-	}
-	.blogs{
-		margin-left: 0;
 	}
 	.footer-links{
 		flex-direction: column;
@@ -330,7 +378,6 @@ footer h2{
 		justify-content: center;
 		margin: 0;
 	}
-	
 	.main-section nav ul li {
 		width: 150px;
 		margin: 0 10px;
@@ -341,8 +388,6 @@ footer h2{
 	}
 	.blogs {
 		grid-template-columns: repeat(2, 1fr);
-		margin: 0;
-		padding: 20px;
 	}
 	.social-media-icons {
 		display: grid;
@@ -355,7 +400,7 @@ footer h2{
 @media only screen and (min-width:768px) and (max-width:992px) {
 	.banner {
 		max-height: 398px;
-		max-width: 734px;
+		max-width: 990px;
 	}
 	.banner-text {
 		width: 40%;
@@ -365,6 +410,9 @@ footer h2{
 	}
 	.banner-img{
 		width: 60%;
+	}
+	.banner-img img{
+		max-width: 60%;
 	}
 	.main-section{
 		grid-template-columns: 1fr;
@@ -387,7 +435,5 @@ footer h2{
 	}
 	.blogs{
 		grid-template-columns: repeat(2,1fr);
-		margin: 0;
-		padding: 20px;
 	}	
 }

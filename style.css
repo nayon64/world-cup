@@ -25,19 +25,16 @@ hr{
      banner section styles
 ------------------------------- */
 .banner{
-	position: relative;
 	height: 85vh;
 	background-color: #161616;
 	border-radius: 30px;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	justify-content: center;
+	display:flex;
 	align-items: center;
 	margin-top: 7.5vh;
 	margin-bottom: 7.5vh;
 }
 .banner-text{
-	padding: 1em;
+	width: 50%;
 	color: white;
 	margin-left: 4em;
 }
@@ -48,7 +45,7 @@ hr{
 .banner-text> p{
 	font-size: 16px;
 	font-weight: 400;
-	margin: 20px 0;
+	margin: 1em 0;
 }
 .watch-live-btn{
 	font-size: 20px;
@@ -68,12 +65,17 @@ hr{
 	text-decoration: none;
 	color:#fff;
 }
-
+.banner-img{
+	position: relative;
+	height: 100%;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+}
 .banner-img img{
-	margin-left: 1em;
-	width: 35%;
 	position: absolute;
 	bottom: 0;
+	width:80%;
 }
 
 /* ----------------------------
@@ -99,11 +101,12 @@ nav{
 	height: 332px;
 }
 nav ul li{
+	width: 230px;
 	margin: 40px 0;
 	list-style: none;
 	text-align: center;
 	border-radius: 5px;
-	padding: 17px 40px;
+	padding: 17px 0;
 	background-color: white;
 }
 nav ul li a{
@@ -171,6 +174,7 @@ nav ul li a{
 /* ----------------------------
     footer section styles
 ------------------------------- */
+
 footer{
 	background-color: #1E1E1E;
 	padding: 2em 6em;
@@ -198,7 +202,10 @@ footer h2{
 	color: #B9B9B9;
 	letter-spacing: 1px;
 }
-.social-meadia-icons i{
+
+/* social meadia links styles */
+
+.social-media-icons i{
 	font-size: 2.3em;
 	border: 3px solid #fff;
 	padding: .8rem;
@@ -216,4 +223,171 @@ footer h2{
 }
 .fa-pinterest{
 	color: #E60023;
+}
+
+
+/* ----------------
+    media query 
+------------------ */
+
+@media only screen and (max-width:577px) {
+	.banner{
+		height: 100vh;
+		flex-direction: column;
+		margin: 0;
+	}
+	.banner-text{
+		width: 100%;
+		margin-left: 0;
+		padding: 1.5em;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.banner-title{
+		font-size: 2em;
+	}
+	.banner-text>p{
+		width: 80%;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	.banner-img{
+	    max-width: 100%;
+	}
+	.banner-img img{
+		height: 100%;
+	}
+	
+
+	nav{
+		height: auto;
+		margin-bottom: 20px;
+		background-color: transparent;
+		display: flex;
+		justify-content: center;
+	}
+	
+	nav ul li{
+		margin: 20px 0;
+		border: 1px solid gray;
+	}
+	.main-section, .blogs{
+		grid-template-columns: 1fr;
+	}
+	.blogs{
+		margin-left: 0;
+	}
+	.footer-links{
+		flex-direction: column;
+		text-align: center;
+	}
+	.social-media-icons{
+		display: flex;
+		flex-direction: column;
+
+	}
+}
+ 
+/* media query for 577px to 768px */
+
+@media only screen and (min-width:577px) and (max-width:768px){
+	.banner{
+		max-height: 398px;
+		max-width: 734px;
+	}
+	.banner-text{
+		width: 40%;
+	}
+	.banner-title {
+		font-size: 2em;
+	}
+	.banner-text>p{
+		font-size: 14px;
+		height: 48px;
+		overflow: hidden;
+
+	}
+	.banner-img{
+		width: 60%;
+	}
+	.main-section {
+		grid-template-columns: 1fr;
+	    justify-content: center;
+	}
+	
+	.main-section nav {
+		background-color: transparent;
+		height: auto;
+		padding: 0;
+		margin-bottom: 20px;
+	}
+	
+	.main-section nav ul {
+		display: flex;
+		justify-content: center;
+		margin: 0;
+	}
+	
+	.main-section nav ul li {
+		width: 150px;
+		margin: 0 10px;
+		border: 1px solid gray;
+	}
+	.main-section nav ul li a{
+		font-size: 14px;
+	}
+	.blogs {
+		grid-template-columns: repeat(2, 1fr);
+		margin: 0;
+		padding: 20px;
+	}
+	.social-media-icons {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+/* media query for 768px to 992px */
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+	.banner {
+		max-height: 398px;
+		max-width: 734px;
+	}
+	.banner-text {
+		width: 40%;
+	}
+	.banner-title{
+		font-size: 2.5em;
+	}
+	.banner-img{
+		width: 60%;
+	}
+	.main-section{
+		grid-template-columns: 1fr;
+		justify-content: center;
+	}
+	.main-section nav{
+		background-color: transparent;
+		height: auto;
+		padding: 0;
+		margin-bottom: 20px;
+	}
+	.main-section nav ul{
+		display: flex;
+		justify-content: center;
+		margin: 0;
+	}
+	.main-section nav ul li{
+		margin: 0 10px;
+		border: 1px solid gray;
+	}
+	.blogs{
+		grid-template-columns: repeat(2,1fr);
+		margin: 0;
+		padding: 20px;
+	}	
 }

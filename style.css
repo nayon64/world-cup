@@ -21,22 +21,25 @@ hr{
 	height: 1px;
 	background-color: rgb(75, 75, 75);
 }
+
 /* ----------------------------
      banner section styles
 ------------------------------- */
-.banner{
-	height: 550px;
+.banner {
 	background-color: #161616;
+	max-width: 1170px;
 	border-radius: 30px;
-	display:flex;
+	padding: 20px 20px 0;
+	display: flex;
 	align-items: center;
-	margin-top: 7.5vh;
-	margin-bottom: 7.5vh;
+	margin-top: 40px;
+	margin-bottom: 40px;
+
 }
 .banner-text{
+	padding-left: 8%;
 	width: 50%;
 	color: white;
-	margin-left: 4em;
 }
 .banner-title{
 	font-size: 3.5em;
@@ -74,17 +77,19 @@ hr{
 .watch-live-btn:hover a{
 	color: #000;
 }
-.banner-img{
-	position: relative;
-	height: 100%;
+
+/* banner image */
+
+.banner-img {
+	padding-top: 30px;
 	width: 50%;
 	display: flex;
 	justify-content: center;
+	align-items: flex-end;
 }
-.banner-img img{
-	position: absolute;
-	bottom: 0;
-	width: 80%;
+
+.banner-img img {
+	width: 100%;
 }
 
 /* ----------------------------
@@ -99,6 +104,7 @@ main{
 	display: grid;
 	grid-template-columns: 300px 1fr;
 	margin: 3em 0;
+	justify-content: center;
 }
 
 /* nav links styles */
@@ -310,18 +316,18 @@ footer h2{
 	color: #E71D25;
 }
 
-/* ----------------
-    media query 
------------------- */
+/* ---------------------------------
+    media query section
+--------------------------------- */
 
 
 /* media query for mobile devies */
 
 @media only screen and (max-width:577px) {
 	.banner{
-		height: 100vh;
 		flex-direction: column;
-		margin: 0;
+		padding: 0;
+		
 	}
 	.banner-text{
 		width: 100%;
@@ -342,7 +348,8 @@ footer h2{
 		text-overflow: ellipsis;
 	}
 	.banner-img{
-	    max-width: 100%;
+	    width: 100%;
+		padding: 0 20px;
 	}
 	.banner-img img{
 		height: 100%;
@@ -360,6 +367,7 @@ footer h2{
 	}
 	.main-section, .blogs{
 		grid-template-columns: 1fr;
+		width: 100%;
 	}
 	footer h2{
 		font-size: 1.4em;
@@ -378,13 +386,6 @@ footer h2{
 /* media query for medium devies */
 
 @media only screen and (min-width:577px) and (max-width:768px){
-	.banner{
-		max-height: 398px;
-		max-width: 734px;
-	}
-	.banner-text{
-		width: 40%;
-	}
 	.banner-title {
 		font-size: 2em;
 	}
@@ -392,9 +393,6 @@ footer h2{
 		font-size: 14px;
 		height: 48px;
 		overflow: hidden;
-	}
-	.banner-img{
-		width: 60%;
 	}
 	.main-section {
 		grid-template-columns: 1fr;
@@ -435,21 +433,8 @@ footer h2{
 /* media query for large devies */
 
 @media only screen and (min-width:768px) and (max-width:992px) {
-	.banner {
-		max-height: 398px;
-		max-width: 990px;
-	}
-	.banner-text {
-		width: 40%;
-	}
 	.banner-title{
 		font-size: 2.5em;
-	}
-	.banner-img{
-		width: 60%;
-	}
-	.banner-img img{
-		max-width: 60%;
 	}
 	.main-section{
 		grid-template-columns: 1fr;

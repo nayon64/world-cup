@@ -324,6 +324,8 @@ footer h2{
 /* media query for mobile devies */
 
 @media only screen and (max-width:577px) {
+
+	/* banner section */
 	.banner{
 		flex-direction: column;
 		padding: 0;
@@ -354,6 +356,8 @@ footer h2{
 	.banner-img img{
 		height: 100%;
 	}
+
+	/* main section */
 	nav{
 		height: auto;
 		margin-bottom: 20px;
@@ -386,6 +390,8 @@ footer h2{
 /* media query for medium devies */
 
 @media only screen and (min-width:577px) and (max-width:768px){
+
+	/* banner section */
 	.banner-title {
 		font-size: 2em;
 	}
@@ -433,6 +439,8 @@ footer h2{
 /* media query for large devies */
 
 @media only screen and (min-width:768px) and (max-width:992px) {
+
+	/* banner section */
 	.banner-title{
 		font-size: 2.5em;
 	}
